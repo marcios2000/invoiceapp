@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import ListCustomers from "./components/ListCustomers";
 import './App.css';
+import AddCustomers from './components/AddCustomer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header>
+      <img alt ="logo"src="https://www.bakergoodchild.co.uk/wp-content/uploads/2017/08/Invoice-printing-and-mailing-862x881.png"></img>
+      <h1>Invoice LookUp</h1>
+      <nav>
+        <AddCustomers />
+        <button>Add Invoice</button>
+        <button>Invoice Lookup</button>
+        
+      </nav>
+      <main>
+        
+      <ListCustomers />
+      </main>
+    </header>
+   
+      
     </div>
   );
 }
