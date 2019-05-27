@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import axios from "axios"
 
 class AddCustomers extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state ={
             code: "",
@@ -17,7 +17,7 @@ class AddCustomers extends Component {
     }
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value });
-      }
+    }
 
 
 
@@ -38,7 +38,7 @@ class AddCustomers extends Component {
               })
               .then(response => {
                 console.log(response.data);
-                this.props.changeView("customers");
+                this.props.changeView("customers")
               })
               .catch(error => {
                 console.log(error);

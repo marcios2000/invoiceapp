@@ -36,13 +36,33 @@ input {
   width: 20vw
 }
 
-main{
-  color: black;
-  width: 8vw;
-  height: auto;
-  font-size: 14px;
-  background-color:red
+.listinvoices{
+  overflow-y: auto;
+  max-height: 50vh;
+  background-color: cadetblue
+  
 
 
 
+}
+.inputboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.listcustomers {
+  overflow-y: auto;
+  max-height: 50vh;
+  background-color: cadetblue
+
+}
+.lookup {
+  height: 6vh;
+  font-size: 20px
+
+}
+header {
+  width: 80vw;
+  border: solid 30px red
 }

@@ -1,7 +1,8 @@
 import React, {Component} from "react"
 import axios from "axios"
-import ListCustomer from "./ListCustomer"
+
 import DeleteCustomer from './removeCustomer'
+
 
 
 class ListCustomers extends Component {
