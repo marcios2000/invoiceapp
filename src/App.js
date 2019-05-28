@@ -33,7 +33,7 @@ function App() {
           </div>
           </div>
         
-          <search><LookUp /></search>
+          <lookup><LookUp /></lookup>
          
           </nav>
         </div>
