@@ -12,7 +12,10 @@ function App() {
   return (
     <div className="App">
     <header>
+      <div className="logos">
       <img alt ="logo"src="https://www.bakergoodchild.co.uk/wp-content/uploads/2017/08/Invoice-printing-and-mailing-862x881.png"></img>
+      <img alt="logo1" src="http://www.zingerbug.com/Comments/glitter_graphics/have_a_great_day_waving_smiley_face.gif"></img>
+      </div>
       <h1>Invoice LookUp</h1>
       <div>
         <div >
