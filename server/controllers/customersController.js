@@ -40,10 +40,34 @@ const listCustomers = [{
 }];
 
 const listInvoices = [{
-    invoice: "21345",
+    invoice: "654",
     customerId: "1000",
-    price: "34.45",
-    name: listCustomers[0].name
+    price: "$2345.45",
+    name: "Color Customs"
+},
+{   invoice: "655",
+    customerId: "1001",
+    price: "574.56",
+    name: "Maaco Collision"
+
+},
+{   invoice: "656",
+    customerId: "1002",
+    price: "$35.45",
+    name: "Caliber Collision"
+
+},
+{
+    invoice: "657",
+    customerId: "1003",
+    price: "$999.43",
+    name: "Xtreme Collision Repair"
+},
+{
+    invoice: "658",
+    customerId: "1004",
+    price: "$4374.46",
+    name: "4M Paint and Body"
 }]
 
 
@@ -76,7 +100,8 @@ const addInvoices = (req, res) => {
 };
 
 const deleteInvoices = (req, res) => {
-    const index = listInvoices.findIndex(invoice => invoice.name === req.params.name);
+    const {name} = req.params
+    const index = listInvoices.findIndex(invoice => invoice.name === name);
     listInvoices.splice(index, 1);
     res.json(listInvoices)
 }
